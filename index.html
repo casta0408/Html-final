@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sena sport</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- menu despegable -->
+        <div class="menu-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <div class="menu">
+                <a href="#">
+                    <h2>Categorias </h2>
+                    <ul>
+                        <li>Hombre</li>
+                        <li>Mujer</li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <h2>Ofertas</h2>
+                    <ul>
+                        <li>20%</li>
+                        <li>30%</li>
+                        <li>40% </li>
+                    </ul>
+                </a>
+                <a href="#">
+                    <h2>Deportes</h2>
+                    <ul>
+                        <li>Fútbol</li>
+                        <li>Baloncesto</li>
+                    </ul>
+                </a>
+
+            </div>
+        </div>
+        <section>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#contactanos">Contáctanos</a></li>
+        </section>
+        <input type="text" class="search-input" placeholder="🔍Buscar">
+        <div class="Logo"></div>
+    </header>
+   <!--  inicio -->
+    <section id="inicio">
+        <h1>¿Quienes somos?</h1>
+        <p>
+            En Sena Sport, somos apasionados por el deporte y el bienestar. Ofrecemos una amplia variedad de productos de alta calidad para todas las disciplinas deportivas, desde fútbol hasta tenis de mesa. Nos dedicamos a proporcionar a nuestros clientes artículos deportivos de confianza, diseñados para mejorar su rendimiento y disfrutar de cada momento. Con un compromiso constante con la excelencia y el servicio, buscamos ser tu tienda deportiva de referencia, brindando las mejores opciones para que lleves tu pasión por el deporte al siguiente nivel.</p>
+    </section>
+    <!-- formulario -->
+    <div class="form-container">
+        <h1>Formulario de Compra</h1>
+        <p>Por favor, completa el siguiente formulario para realizar tu compra.</p>
+
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección de Envío</legend>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Tu dirección de envío" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona los productos</legend>
+
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto" required>
+                    <option value="balon_futbol">Balón de fútbol</option>
+                    <option value="pelota_basquetbol">Pelota de baloncesto</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+            </fieldset>
+
+            <button type="submit">Realizar Compra</button>
+        </form>
+    </div>
+    <!-- productos -->
+    <section id="productos">
+        <h1>Nuestros productos</h1>
+        <p>Diviertete viendo nuestros productos</p>
+        <div class="product-container">
+            <!-- producto 1 -->
+            <div class="product">
+                <img src="/img_web_Sena/balon_baloncesto.png" alt="Producto 1">
+                <h3>Balon de Baloncesto</h3>
+                <p>$76,900</p>
+            </div>
+
+            <!-- producto 2 -->
+            <div class="product">
+                <img src="/img_web_Sena/balon_futbol.png" alt="Producto 2">
+                <h3>Balon de fútbol</h3>
+                <p>$44,900</p>
+            </div>
+
+            <!-- producto 3 -->
+            <div class="product">
+                <img src="/img_web_Sena/raquetas_tennis_mesa.png" alt="Producto 3">
+                <h3>Raquetas para ping pong</h3>
+                <p>$88,900</p>
+            </div>
+    </section>
+<!-- promociones -->
+    <section id="promociones">
+        <h1>Nuestras promociones</h1>
+        <p>Ven y disfruta de nuestras nuevas promociones</p>
+        <div class="promotion-container">
+            <!-- promocion 1 -->
+            <div class="promotion">
+                <img src="/img_web_Sena/bolas_billar.png" alt="Promoción 1">
+                <h3>Bolas de billar</h3>
+                <p>Descuento especial del 20%</p>
+            </div>
+
+            <!--promocion 2 -->
+            <div class="promotion">
+                <img src="/img_web_Sena/gorra_besibolera.png" alt="Promoción 2">
+                <h3>Gorra beisbolera</h3>
+                <p>Compra uno y llévate el segundo al 50%</p>
+            </div>
+
+            <!-- promocion 3 -->
+            <div class="promotion">
+                <img src="/img_web_Sena/mesa_tennis_mesa.png" alt="Promoción 3">
+                <h3>Tenis de mesa </h3>
+                <p>Descuento por tiempo limitado del 30%</p>
+            </div>
+        </div>
+    </section>
+   <!--  contactanos -->
+<footer id="contactanos">
+    <p>Visita nuestas redes sociales</p>
+    <div class="redes">
+        <img src="/img_web_Sena/iconos/facebook.png.png" alt="">
+        <img src="/img_web_Sena/iconos/instagram.png.png" alt="">
+        <img src="/img_web_Sena/iconos/x.png.png" alt="">
+    </div>
+</footer>
+<!-- boton del carrito -->
+<a href="#inicio" class="cart-button">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</body>
+
+</html>
